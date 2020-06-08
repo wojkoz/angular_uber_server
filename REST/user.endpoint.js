@@ -19,6 +19,7 @@ const userEndpoint = (router) => {
       response.status(200).send(result);
     } catch (error) {
       console.log(error);
+      response.status(400).send(error)
     }
   });
 
